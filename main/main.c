@@ -20,11 +20,11 @@ void app_main(void)
     gpio_config(&io_conf);
     gpio_config(&io_conf2);
     gpio_set_level(GPIO_NUM_33, 1);
-    
-    while(1){
+
+    while(1)
+    {
         vTaskDelay(10 / portTICK_PERIOD_MS);
-        
-            gpio_set_level(GPIO_NUM_33, !gpio_get_level(GPIO_NUM_1));
+        gpio_set_level(GPIO_NUM_33, !gpio_get_level(GPIO_NUM_1));
         
     }
 
